@@ -1,0 +1,11 @@
+* {
+  outline: 0;
+  @include box-sizing('border-box');
+  -webkit-font-smoothing: antialiased;
+  line-height: 90%;
+}
+
+a,
+button {
+  cursor: pointer;
+}

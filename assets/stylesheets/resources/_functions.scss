@@ -1,0 +1,29 @@
+$small-device: 480px;
+$medium-device: 768px;
+$large-device: 1024px;
+
+@function em($target-px, $context) {
+  @return ($target-px / $context) * 1em;
+}
+
+@function percent($target, $context) {
+  @return ($target / $context) * 100%;
+}
+
+@mixin respond-to($media) {
+  @if $media == $small-device {
+    @media only screen and (max-width: $small-device) { @content; }
+  }
+  @else if $media == $medium-device {
+    @media only screen and (max-width: $medium-device) { @content; }
+  }
+  @else if $media == $large-device {
+    @media only screen and (min-width: $large-device) { @content; }
+  }
+}
+
+@mixin font-size($target) {
+  $rem: ($target / 16);
+  font-size: #{$target}px;
+  font-size: #{$rem}rem;
+}

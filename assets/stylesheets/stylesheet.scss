@@ -1,0 +1,38 @@
+// Compass
+@import
+  'compass',
+  'compass/reset';
+
+// Sprite
+/* $sprite-dimensions: true;
+@import 'assets.png'; */
+
+// Resources
+/* @import
+  'resources/fonts',
+  'resources/functions'; */
+
+// Libs
+/* @import
+  'libs/'; */
+
+// Components
+@import
+  'layouts/components/colors',
+  'layouts/components/buttons',
+  'layouts/components/forms',
+  'layouts/components/icons',
+  'layouts/components/grid';
+
+//Base
+@import
+  'layouts/base/layout',
+  'layouts/base/normalize';
+
+// Modules
+/* @import
+  'layouts/modules/'; */
+
+// Pages
+/* @import
+  'layouts/pages/'; */
